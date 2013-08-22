@@ -13,7 +13,7 @@ Mole.prototype.prepend = function(objectName, funcName, func) {
         objectName = "window";
     }
     return this._override(objectName, funcName, func, "prepend");
-}
+};
 
 Mole.prototype.append = function(objectName, funcName, func) {
     if (typeof(func) === "undefined") {
@@ -22,7 +22,7 @@ Mole.prototype.append = function(objectName, funcName, func) {
         objectName = "window";
     }
     return this._override(objectName, funcName, func, "append");
-}
+};
 
 Mole.prototype._override = function(objectName, funcName, func, method) {
     var _this, targetObject, newFunc;
